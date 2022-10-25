@@ -10,10 +10,13 @@ Check out `lua/darcula.lua`
 
 ## Installation
 
-```vim
-Plug 'tjdevries/colorbuddy.vim'
-Plug '4542elgh/darcula.nvim'
-
-" And then somewhere in your vimrc, to set the colorscheme
-lua require('colorbuddy').colorscheme('darcula')
+```lua
+-- using Packer.nvim and ofc we need TJ's colorbuddy as a dependency
+use{
+    '4542elgh/darcula.nvim',
+    requires = {{'tjdevries/colorbuddy.nvim'}},
+    config = function()
+        require("darcula")
+    end
+}
 ```
