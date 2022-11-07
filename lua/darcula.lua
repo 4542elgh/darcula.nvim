@@ -8,6 +8,7 @@ Color.new('cursorColumn' , '#313335')
 Color.new('vertSplit' , '#555555')
 Color.new('orangePrimary' , '#c57825')
 Color.new('highlightPrimary' , '#b1c73d')
+Color.new('func', '#DCB15F')
 Color.new('purplePrimary' , '#9676ac')
 Color.new('folded' , '#8e9292')
 Color.new('gitdiffAdd' , '#365546')
@@ -15,6 +16,7 @@ Color.new('gitdiffDelete' , '#8c0909')
 Color.new('gitdiffChange' , '#263b59')
 Color.new('gitdiffText' , '#204a87')
 Color.new('lspError' , '#990000')
+Color.new('lspDiagnosticError' , '#eb4034')
 Color.new('lspMsg' , '#ffffff')
 Color.new('number' , '#7ca8c6')
 Color.new('nonText' , '#888888')
@@ -59,7 +61,7 @@ Group.new('Identifier', colors.orangePrimary, colors.none, styles.NONE)
 Group.new('Label', colors.purplePrimary, colors.none, styles.NONE)
 
 Group.new('Comment', colors.folded, colors.none, styles.NONE)
-Group.new('Function', colors.orangePrimary, colors.none, styles.bold)
+Group.new('Function', colors.func, colors.none, styles.NONE)
 Group.new('Conditional', colors.orangePrimary, colors.none, styles.bold)
 Group.new('Folded', colors.folded, colors.black, styles.NONE)
 Group.new('NonText', colors.nonText, colors.black, styles.NONE)
@@ -72,15 +74,10 @@ Group.new('Tag', colors.none, colors.none, styles.NONE)
 Group.new('Title', colors.whitePrimary, colors.none, styles.bold)
 
 Group.new('Directory', colors.purplePrimary, colors.none, styles.italic)
-
 Group.new('SignColumn', colors.nonText, colors.blackPrimary, styles.NONE)
-
 Group.new('ColorColumn', colors.none, colors.cursorColumn, styles.NONE)
-
 Group.new('LineNr', colors.nonText, colors.blackPrimary, styles.NONE)
-
 Group.new('VertSplit', colors.vertSplit, colors.blackPrimary, styles.NONE)
-
 Group.new('MatchParen', colors.orangePrimary, colors.none, styles.underline)
 
 -- Git 
@@ -121,3 +118,11 @@ Group.new('TabLineSel', colors.whitePrimary, colors.tablineSelect, styles.NONE)
 
 -- Cursor word highlight all occurance
 Group.new('CursorWord', colors.none, colors.none, styles.underline, colors.orangePrimary)
+
+-- LSP Diagnostics
+Group.new('DiagnosticFloatingError', colors.lspDiagnosticError, colors.blackPrimary, styles.NONE)
+Group.new('DiagnosticFloatingWarn', colors.number, colors.blackPrimary, styles.NONE)
+Group.new('DiagnosticFloatingHint', colors.func, colors.blackPrimary, styles.NONE)
+Group.new('DiagnosticFloatingInfo', colors.whitePrimary, colors.blackPrimary, styles.NONE)
+
+Group.new('FloatBorder', colors.number, colors.blackPrimary, styles.NONE)
