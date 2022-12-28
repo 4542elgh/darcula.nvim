@@ -126,3 +126,7 @@ Group.new('DiagnosticFloatingHint', colors.func, colors.blackPrimary, styles.NON
 Group.new('DiagnosticFloatingInfo', colors.whitePrimary, colors.blackPrimary, styles.NONE)
 
 Group.new('FloatBorder', colors.number, colors.blackPrimary, styles.NONE)
+
+-- Treesitter Context Underline and Vertical Line color with indent-blankline.nvim
+Group.new('IndentBlanklineContextStart', colors.none, colors.none, styles.underline, colors.orangePrimary)
+Group.new('IndentBlanklineContextChar', colors.orangePrimary, colors.none)
