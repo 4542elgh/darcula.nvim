@@ -1,4 +1,10 @@
-local Color, colors, Group, groups, styles = require('colorbuddy').setup()
+local colorbuddy = require('colorbuddy')
+colorbuddy.colorscheme("darcula")
+
+local Color = colorbuddy.Color
+local colors = colorbuddy.colors
+local Group = colorbuddy.Group
+local styles = colorbuddy.styles
 
 Color.new('whitePrimary' , '#a9b7c6')
 Color.new('black' , '#2b2b2b')
