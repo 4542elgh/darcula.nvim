@@ -136,3 +136,6 @@ Group.new('FloatBorder', colors.number, colors.blackPrimary, styles.NONE)
 -- Treesitter Context Underline and Vertical Line color with indent-blankline.nvim
 Group.new('IndentBlanklineContextStart', colors.none, colors.none, styles.underline, colors.orangePrimary)
 Group.new('IndentBlanklineContextChar', colors.orangePrimary, colors.none)
+
+-- Local Highlight
+Group.new('LocalHighlight', colors.blackPrimary, colors.folded, styles.NONE)
