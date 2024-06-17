@@ -8,6 +8,7 @@ local styles = colorbuddy.styles
 
 Color.new('whitePrimary' , '#a9b7c6')
 Color.new('black' , '#2b2b2b')
+Color.new('blackDarker' , '#1e1e1e')
 Color.new('visual' , '#214283')
 Color.new('blackPrimary' , '#323232')
 Color.new('cursorColumn' , '#313335')
@@ -36,6 +37,7 @@ Color.new('yamlHeader' , '#292929')
 Color.new('cssFunctionName' , '#3c4c72')
 Color.new('cssClass' , '#d0d0ff')
 Color.new('cssComment' , '#06960e')
+Color.new('array' , '#E06C75')
 
 Group.new('Normal', colors.whitePrimary, colors.black, styles.NONE)
 Group.new('Visual', colors.none, colors.visual, styles.NONE)
@@ -136,6 +138,47 @@ Group.new('FloatBorder', colors.number, colors.blackPrimary, styles.NONE)
 -- Treesitter Context Underline and Vertical Line color with indent-blankline.nvim
 Group.new('IndentBlanklineContextStart', colors.none, colors.none, styles.underline, colors.orangePrimary)
 Group.new('IndentBlanklineContextChar', colors.orangePrimary, colors.none)
+-- Treesitter Context Preview Window
+Group.new('TreesitterContext', colors.whitePrimary, colors.blackDarker, styles.NONE)
 
--- Local Highlight
+-- Local Occurance Word Highlight
 Group.new('LocalHighlight', colors.blackPrimary, colors.folded, styles.NONE)
+
+-- Winbar match background color
+Group.new('WinBar', colors.whitePrimary, colors.black, styles.NONE)
+
+-- Navic colors
+-- Commented are ones I have not seen in coding still. Will change once encounter them
+-- Group.new("NavicIconsFile", colors.purplePrimary, colors.none , styles.NONE)
+-- Group.new("NavicIconsModule", colors.purplePrimary, colors.none , styles.NONE)
+-- Group.new("NavicIconsNamespace", colors.purplePrimary, colors.none , styles.NONE)
+
+Group.new("NavicIconsPackage", colors.orangePrimary, colors.none , styles.NONE)
+Group.new("NavicIconsMethod", colors.orangePrimary, colors.none , styles.NONE)
+Group.new("NavicIconsClass", colors.orangePrimary, colors.none , styles.NONE)
+
+-- Group.new("NavicIconsProperty", colors.orangePrimary , colors.none , styles.NONE)
+-- Group.new("NavicIconsField", colors.orangePrimary , colors.none , styles.NONE)
+-- Group.new("NavicIconsConstructor", colors.orangePrimary , colors.none , styles.NONE)
+-- Group.new("NavicIconsEnum", colors.orangePrimary , colors.none , styles.NONE)
+-- Group.new("NavicIconsInterface", colors.orangePrimary , colors.none , styles.NONE)
+
+Group.new("NavicIconsFunction", colors.func , colors.none , styles.NONE)
+Group.new("NavicIconsVariable", colors.purplePrimary, colors.none , styles.NONE)
+Group.new("NavicIconsConstant", colors.purplePrimary , colors.none , styles.NONE)
+Group.new("NavicIconsString", colors.string , colors.none , styles.NONE)
+Group.new("NavicIconsNumber", colors.number , colors.none , styles.NONE)
+Group.new("NavicIconsBoolean", colors.orangePrimary , colors.none , styles.NONE)
+Group.new("NavicIconsArray", colors.func, colors.none , styles.NONE)
+Group.new("NavicIconsObject", colors.func, colors.none , styles.NONE)
+
+-- Group.new("NavicIconsKey", colors.whitePrimary, colors.none , styles.NONE)
+-- Group.new("NavicIconsNull", colors.whitePrimary, colors.none , styles.NONE)
+-- Group.new("NavicIconsEnumMember", colors.whitePrimary, colors.none , styles.NONE)
+-- Group.new("NavicIconsStruct", colors.whitePrimary, colors.none , styles.NONE)
+-- Group.new("NavicIconsEvent", colors.whitePrimary, colors.none , styles.NONE)
+-- Group.new("NavicIconsOperator", colors.highlightPrimary , colors.none , styles.NONE)
+-- Group.new("NavicIconsTypeParameter", colors.highlightPrimary , colors.none , styles.NONE)
+
+Group.new("NavicText", colors.whitePrimary, colors.none , styles.NONE)
+Group.new("NavicSeparator", colors.number, colors.none , styles.NONE)
