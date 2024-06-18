@@ -133,6 +133,8 @@ Group.new('DiagnosticFloatingWarn', colors.number, colors.blackPrimary, styles.N
 Group.new('DiagnosticFloatingHint', colors.func, colors.blackPrimary, styles.NONE)
 Group.new('DiagnosticFloatingInfo', colors.whitePrimary, colors.blackPrimary, styles.NONE)
 
+-- Cmp floating window color
+Group.new('NormalFLoat', colors.whitePrimary, colors.blackPrimary, styles.NONE)
 Group.new('FloatBorder', colors.number, colors.blackPrimary, styles.NONE)
 
 -- Treesitter Context Underline and Vertical Line color with indent-blankline.nvim
